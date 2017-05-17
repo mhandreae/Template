@@ -1,12 +1,12 @@
 ---
 title: \normalsize Cool and Snappy Title
-csl: ./../../Bibliography/apa.csl
+csl: apa.csl
 output:
   word_document:
       reference_docx: mystyles.docx
 
 fontfamily: pslatex
-bibliography: ./../../Bibliography/PONV.bib
+bibliography: Bibliography.bib
 ---
 \setlength{\parindent}{0ex}
 
