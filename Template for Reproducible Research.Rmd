@@ -215,10 +215,8 @@ Text messaging could provide a cost effective, yet efficient and reliable tool t
 
 ## Figure 1
 
-```{r insertfigure, eval=FALSE}
-# this is how we could insert a figure
-![Figure 1](http://www.almanac.com/sites/default/files/moon-dog-647528_1280_0.jpg)
-```
+
+![Figure 1](AcetaminophenForestPlot.gif)
 
 ### Figure 1 Caption
 This is a nice picture of the moon....
