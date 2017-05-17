@@ -1,0 +1,229 @@
+---
+title: \normalsize Cool and Snappy Title
+csl: ./../../Bibliography/apa.csl
+output:
+  word_document:
+      reference_docx: mystyles.docx
+
+fontfamily: pslatex
+bibliography: ./../../Bibliography/PONV.bib
+---
+\setlength{\parindent}{0ex}
+
+
+
+##### Authors
+
+Your Name and Institution goes here
+
+Michael H. Andreae, M.D., Department of Anesthesiology, Penn State Health Milton S. Hershey Medical Center, Penn State College of Medicine, Hershey. PA
+
+
+
+
+
+##### Corresponding author:
+
+Michael Andreae, MD, Address: Department of Anesthesiology, Penn State Health Milton S. Hershey Medical Center, Penn State College of Medicine, Hershey. PA, Tel: Phone: (717) 531-6597, Email: mandreae@pennstatehealth.psu.edu
+
+##### Acknowledgement
+
+This research is supported in part by NIH grant 123456789
+
+##### Conflicts of Interest: None
+
+**Number of Words in Introduction () Methods () and, Discussion (1598) with Figures (2)**
+
+\newpage
+
+```{r, global_options, echo=FALSE}
+suppressWarnings(library(knitr))
+# set options
+opts_chunk$set(fig.width=6, fig.height=4, fig.path='Figs/',
+               echo=FALSE, warning=FALSE, message=FALSE)
+eval_everything=FALSE
+```
+
+```{r bibliography, eval=FALSE, echo=FALSE}
+# To comply with different style use
+# anesthesia-and-analgesia.csl
+```
+
+```{r description_data set, eval=FALSE}
+load(".Rdata")
+```
+
+# Abstract
+
+**Background:**
+
+**Methods:**  
+
+**Results:**  
+
+**Discussion:** 
+
+\newpage
+
+# Lay Summary
+Nausea is a feeling of sickness with an inclination to vomit and frequently occurs after surgery as a side effect of anesthesia.... 
+
+\newpage
+
+\setcounter{secnumdepth}{2}
+\setlength{\parindent}{10ex}
+
+
+# Introduction
+
+Postoperative nausea and vomiting (PONV) is perceived by patients as one of the most important outcomes after anesthesia [@MacarioWeingerCarneyEtAl1999]. 
+
+## Objective
+To test the feasibility of automated assessment of postoperative nausea and vomiting in a rural setting, to gauge attrition and loss to follow up, and to estimate the precision and accuracy of patient responses compared to assessment by nurse led phone interview.
+
+## Hypothesis
+
+We hypothesize that text based assessment of PONV outcomes after patient discharge is feasible, with comparable attrition, accuracy and precision as follow up by a nurse led phone call.
+
+\newpage
+
+# Methods
+
+
+## Population
+
+We will select research subjects randomly among the population eligible 
+
+### Inclusion Criteria
+
+All adult (>18 years old) patients who undergo anesthesia for *elective* surgery in the study period at Penn State Milton S. Hershey Medical Center, will be eligible for inclusion. 
+
+
+### Exclusion Criteria
+Pregnant patients are automatically excluded, as female patients routinely receive a pregnancy test on the day of the procedure and a positive test precludes elective surgery. 
+
+## Outcomes
+
+### Primary Outcome
+
+The primary outcome is... We measure the...
+
+### Secondary Outcome
+
+We will explore risk factors for 
+
+## Data Collection
+The analysis is based on the data extracted from electronic medical record of observations recorded during routine medical care. Additionally, we will contact patients via text message to solicit their experience of PONV after surgery.
+
+The unit of analysis is the anesthesia record. We will not retain patient identifiers and hence patients undergoing anesthesia on several occasions in the study period will be counted as separate anesthetics and analyzed independently. 
+
+## Approach
+
+### Data Source
+The source of the data is the electronic medical record (EMR) and the anesthesia information management system (AIMS) containing the information collected and documented during routine medical care perioperatively. Additional data sources are the numbers the patients respond to text messaging and responses given to the nurse calling the patient.
+
+### Data retrieval
+
+#### Patient selection from the electronic medical record
+A medical data specialist employed by the anesthesia department for EMR based quality improvement, who is not involved in our study or analysis, will identify patients who underwent anesthesia using the billing system, Cerner and other medical record databases. She will extract patient medical record numbers and convert them into de-identified subject numbers and transfer these with the patient name, primary and secondary telephone numbers to RedCap for text messaging via Twillio and for the nurse call. She will maintain a master list of medical record number and subject number as a separate encrypted file in a secured location for rematching of the responses to the patient clinical data *after* text messaging.
+
+#### Data collection with text messaging and nurse call
+Responses from the RedCap/Twillio text messaging and nurse call will be collected via RedCap. After completion of the text messaging and nurse call, the telephone numbers and patient names, (the only remaining HIPPA identifiers) will be removed prior to analysis of the fully the de-identified data file by the investigators. 
+
+#### Rematching patient responses with clinical data using the de-identified subject identifier
+The same medical data specialist employed by the anesthesia department will extract patient and procedure specific risk factors for PONV from the EMR and the AIMS, detailed below. She will also extract the perioperative pharmacological and non-pharmacological interventions relevant to the prevention of PONV from the AIMS and the EMR. She will combine these patient data in RedCap with the responses from the Twillio Text messaging and nurse call using the participant code. The individual participatn record will at this point no longer contain name, telephone number, but only deidentified  patient clinical data and will be only stored in RedCap. The deidentified data will be accessed directly from RedCap for statiscal analysis. The master list linking the subject number to the medical record will be destroyed after rematching.
+
+### Waiver of informed consent
+We request a waiver of informed consent as the research involves no more than minimal risk to the subjects. 
+
+### Justification of chart review
+Retrieval of study data necessitates access to patient charts through their MRNs. The computer-generated text messaging will require access to the patients (or patient' next of kin) cell phone number. The call will be triggered though RedCap and the response will also be recorded through RedCap, removing all patients' identifiers after the completion of the call. The nurse led phone call will require access to the patient's phone number, name to address them in person and their clinical file. Neither will be retained or recorded after the contact has been established, except the responses, which will be documented in Redcap. Once this information is obtained, data will be de-identified including the removal of the telephone number, names and all code numbers linking to patient medical record number.
+
+### Data collected
+The data extracted from the EMR and AIMS will include 
+
+#### demographics for the patient
+
+- age in years (or in decades if older than 89 years for compliance with HIPPA),
+- gender,
+- history of PONV or history of motion sickness if available,
+- smoking history,
+- race
+
+#### anesthesia specific information
+
+- dose and time of any antiemetic medications administered (Dexamethason, Ondansetron, Aprepitant, Metoclopramide, Pheneragan, Droperidol, Propofol),
+- time and dose of any antiemetics (listed above) given preoperative if any,
+- time and maximum concentration of any volatile anesthetic recorded on the AIMS,
+- time and dose of long acting opioid administered intra-operatively,
+- anesthesia technique (General versus regional versus monitored anesthesia care)
+
+
+
+
+
+## Statistical analysis
+
+### Primary Analysis
+We will investigate agreement between the automated PONV assessment and the nurse-led PONV assessment, (both measured on the same validated simplified PONV impact score[@MylesWengritzky2012]), estimating Cohen's weighted kappa statistic with its 95% confidence intervals[@Cohen1968]. We will also attempt a Bland-Altman analysis, considering the (discrete) numerical simplified PONV impact score[@MylesWengritzky2012] as continuous[@Giavarina2015].
+
+### Exploratory analysis
+
+#### Regression analysis
+
+##### Exploring PONV risk
+For the exploratory analysis of risk factors for the PONV outcomes as measured by the simplified PONV impact score[@MylesWengritzky2012], we will fit multivariate ordinal regression models.
+
+##### Exploring predictors for failure to respond and data missing at random 
+We will compare the charactersitcs of patients who faile to respond to text messaging with those who do, conducting chi-sqaure test for categorical variables (gender, smoking status...) and t-tests or Wilcoxon rank sum tests for continuous variables, contingent on their distributions. For an exploratory analysis of predictors for failure to respond to text messaging, we will also fit binrary logistic regression models. We will suspect that data are not missing at random, if our binary logistic regression yields highly significant results.
+
+##### Exploring if risk factors and treatment interact to affect PONV outcome
+To explore the interaction between risk factors and treatment in their effect on PONV outcome, measured by the simplified PONV impact score[@MylesWengritzky2012], we will again us ordinal logistic regression with interaction terms.
+
+### Software used
+
+We used the statistical software  *R*, the public domain statistical software package [@R_software].
+
+\newpage
+
+# Results
+
+## Description of the data set
+
+
+# Discussion
+
+## Summary of the findings
+
+## Significance
+
+Text messaging could provide a cost effective, yet efficient and reliable tool to assess PONV outcomes, especially in rural settings, both for health services and outcomes research and for quality improvement. Text messaging may help to identify patients at need for interventions for severe PONV and such may reduce emergency room visits for PONV, besides increasing patient satisfaction. 
+
+
+## Generalizability 
+
+
+## Critique of the modeling approach
+
+
+#### Confounding, missing data and model misspecification
+
+
+# Conclusion: 
+
+# Figures
+
+## Figure 1
+
+```{r insertfigure, eval=FALSE}
+# this is how we could insert a figure
+![Figure 1](http://www.almanac.com/sites/default/files/moon-dog-647528_1280_0.jpg)
+```
+
+### Figure 1 Caption
+This is a nice picture of the moon....
+
+# References
+
+<!-- remove paragraph indentation for references only --> 
+\setlength\parindent{0pt}
